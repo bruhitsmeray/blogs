@@ -1,0 +1,42 @@
+.container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    margin: 12px;
+    max-width: 840px;
+}
+
+h2{
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+
+    padding: 4px 8px;
+}
+
+article{
+    background-color: var(--box-color);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+
+    margin: 12px 0;
+}
+
+article:hover{
+    transition: cubic-bezier(0.07, 1.41, 0.82, 1.41) 0.2s;
+    transform: scale(1.02);
+}
+
+article div{
+    padding: 10px;
+}
+
+article div a{
+    color: var(--font-color);
+    font-size: 18px;
+}
+
+article div p{
+    color: grey;
+}
