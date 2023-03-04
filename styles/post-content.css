@@ -1,3 +1,16 @@
+pre{
+    background: var(--bg-color);
+    border-left: 4px solid var(--primary-color);
+    border-radius: 6px;
+
+    padding: 0 24px;
+}
+
+code{
+    font-family: monospace;
+    font-size: 12px;
+}
+
 .container{
     align-items: center;
     display: flex;
