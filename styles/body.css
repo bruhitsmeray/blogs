@@ -43,7 +43,8 @@ body {
 }
 
 footer {
-    padding: 40px;
+    font-size: 12px;
+    padding: 40px 0;
 }
   
 footer p {
