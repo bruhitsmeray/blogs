@@ -8,8 +8,9 @@
     --heading-font-color: #f4f5ff;
     --hover-color: rgba(50, 50, 50, 0.8);
 
-    --primary-color: #e55934;
-    --secondary-color: #955100;
+    --primary-color: #3eb489;
+    --secondary-color: #607999;
+    --text-shadow: none;
 }
 
 [data-theme="dark"] {
@@ -22,8 +23,9 @@
     --heading-font-color: #424242;
     --hover-color: #f4f5ff;
 
-    --primary-color: #fa7921;
-    --secondary-color: #fdcf99;
+    --primary-color: #3eb489;
+    --secondary-color: #ccfbe5;
+    --text-shadow: black 0px 1px 2px; 
 }
 
 * {
@@ -33,21 +35,34 @@
     font-family: Verdana, Tahoma, sans-serif;
 }
 
+a{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
 body {
     align-items: center;
-    background-color: var(--bg-color);
-    color: var(--font-color);
-
     display: flex;
     flex-direction: column;
+    
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    text-shadow: var(--text-shadow);
 }
 
 footer {
     font-size: 12px;
-    padding: 40px 0;
+    padding: 4% 0;
+  
+    text-shadow: var(--text-shadow);
+}
+  
+footer a {
+    font-family: monospace;
 }
   
 footer p {
     color: var(--font-color);
+    font-family: monospace;
     text-align: center;
 }
