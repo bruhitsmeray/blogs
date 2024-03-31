@@ -1,0 +1,22 @@
+.info{
+    margin: 2% 0;
+    text-align: center;
+}
+
+.info p{
+    padding-top: 4px;
+}
+
+section{
+    width: 100%;
+    max-width: 60vw;
+}
+
+.part{
+    padding: 12px 0;
+}
+
+.part p{
+    font-family: monospace;
+    font-size: 16px;
+}

@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    display: flex;
+
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+
+    background-color: var(--background);
+    color: var(--text);
+
+    text-shadow: 0 0 0.2em white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.crt::before,
+.crt::after{
+    content: " ";
+    display: block;
+
+    pointer-events: none;
+    position: fixed;
+
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 2;
+}
+
+.crt::before{
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 2px, 3px 100%;
+}
+
+.crt::after{
+    animation: flicker 0.15s infinite;
+    background: rgba(18, 16, 16, 0.1);
+    
+    opacity: 0;
+}
+
+.year-container{
+    margin: 12px 0;
+}
+
+.year-container h1{
+    background-color: var(--accent);
+    padding: 4px 12px;
+    text-shadow: none;
+}
+
+.year-container ul{
+    list-style: none;
+}
+
+.year-container li{
+    margin: 8px 0;
+}
+
+.title{
+    color: var(--accent);
+    font-size: 21px;
+    font-weight: 600;
+    text-shadow: none;
+}
+
+.description{
+    font-family: monospace;
+    font-size: 16px;
+}
+
+footer{
+    font-size: 16px;
+    padding: 4% 0;
+
+    font-family: monospace;
+    transition: 0.2s;
+}
+  
+footer a {
+    color: var(--accent);
+}
+
+footer a:hover{
+    text-shadow: 0 0 0.5em var(--accent);
+}
+  
+footer p{
+    color: var(--font-color);
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    section{
+        width: 100%;
+        max-width: 80vw;
+    }
+}
